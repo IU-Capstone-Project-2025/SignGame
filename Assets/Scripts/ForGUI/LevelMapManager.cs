@@ -24,6 +24,7 @@ public class LevelMapManager : MonoBehaviour
         passMapVertical = new GameObject[lm.roomsX, lm.roomsY - 1];
         for (int x = 0; x < lm.roomsX; ++x) {
             for (int y = 0; y < lm.roomsY; ++y) {
+                if (lm.GetRoom(x, y) == null) continue;
                 roomsMap[x, y] = Instantiate(roomPrefab, mapRoot, false);
                 roomsMap[x, y].name = $"{roomPrefab.name} {x} {y}";
                 roomsMap[x, y].transform.localPosition = new(x * roomOffsetX, -y * roomOffsetY, 0);

@@ -15,6 +15,15 @@ public class RoomDirections {
     public DirAvailability left;
     public DirAvailability right;
 
+    public RoomDirections() {}
+
+    public RoomDirections(RoomDirections roomDirections) {
+        up = roomDirections.up;
+        down = roomDirections.down;
+        left = roomDirections.left;
+        right = roomDirections.right;
+    }
+
     public static RoomDirections Any() {
         return new RoomDirections{
             up = DirAvailability.Any,
@@ -30,6 +39,15 @@ public class RoomDirections {
         r &= left == DirAvailability.Any || left == other.left;
         r &= right == DirAvailability.Any || right == other.right;
         return r;
+    }
+
+    public RoomDirections ExtendAvailable(RoomDirections other) {
+        RoomDirections rd = new(this);
+        rd.up = rd.up == DirAvailability.Available || other.up == DirAvailability.Available ? DirAvailability.Available : rd.up;
+        rd.down = rd.down == DirAvailability.Available || other.down == DirAvailability.Available ? DirAvailability.Available : rd.down;
+        rd.left = rd.left == DirAvailability.Available || other.left == DirAvailability.Available ? DirAvailability.Available : rd.left;
+        rd.right = rd.right == DirAvailability.Available || other.right == DirAvailability.Available ? DirAvailability.Available : rd.right;
+        return rd;
     }
 
     public override string ToString() {
