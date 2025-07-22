@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7788737926595910136}
   m_Layer: 0
   m_Name: SpikesAttack
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.92311573
@@ -380,6 +384,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -471,6 +479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9195
@@ -553,6 +565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.65
@@ -634,6 +650,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -725,6 +745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.8694287
@@ -815,6 +839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0984
@@ -897,6 +925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.68
@@ -978,6 +1010,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -1069,6 +1105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0173141
@@ -1150,6 +1190,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -1241,6 +1285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.8441247
@@ -1323,6 +1371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.68
@@ -1404,6 +1456,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -1495,6 +1551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.73
@@ -1576,6 +1636,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -1667,6 +1731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 11
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8775672
@@ -1757,6 +1825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0033584
@@ -1838,6 +1910,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
@@ -1929,6 +2005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8462662
@@ -2010,6 +2090,10 @@ PrefabInstance:
     - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_Name
       value: Spike 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040574191777674068, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8365899164818897128, guid: 67f155b88c2a6fd4b8a064919ce06121, type: 3}
       propertyPath: m_LocalScale.x

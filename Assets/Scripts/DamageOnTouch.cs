@@ -13,11 +13,16 @@ public class DamageOnTouch : MonoBehaviour
         spikeRotation = new Vector2(x, y).normalized;
     }
 
-    void OnCollisionStay2D(Collision2D collision) {
+    void OnCollisionStay2D(Collision2D collision)
+    {
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log(spikeRotation);
             collision.gameObject.GetComponent<Player>().TakeDamage(damage, spikeRotation);
+        }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider, true);
         }
     }
 }

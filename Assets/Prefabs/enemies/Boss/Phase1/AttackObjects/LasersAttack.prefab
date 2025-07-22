@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5529574983235383526}
   m_Layer: 0
   m_Name: LasersAttack
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -190,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_Name
       value: Laser (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -253,6 +261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -314,6 +326,10 @@ PrefabInstance:
     - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_Name
       value: Laser (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -377,6 +393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -438,6 +458,10 @@ PrefabInstance:
     - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_Name
       value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -501,6 +525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser
       objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -562,6 +590,10 @@ PrefabInstance:
     - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_Name
       value: Laser (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686983395189334560, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4024839196529123668, guid: 567038d9fce2c5c138840a7b24d0a54a, type: 3}
       propertyPath: m_LocalPosition.x
