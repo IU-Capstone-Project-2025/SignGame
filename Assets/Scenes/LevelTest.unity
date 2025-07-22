@@ -153,7 +153,7 @@ MonoBehaviour:
   roomOffsetX: 22.81
   roomOffsetY: 14.21
   usePath: 1
-  removeUselessClusters: 0
+  removeUselessClusters: 1
   startRooms:
   - {fileID: 11400000, guid: 598d71b533d25064e81c6dfddf612383, type: 2}
   - {fileID: 11400000, guid: add3367bfe6f9e24c9ba710cfb3ec5e5, type: 2}
@@ -2652,6 +2652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapRoot: {fileID: 718551940}
   roomPrefab: {fileID: 9199501817593724642, guid: 4e6b8c57aa5413b4e8bf155ff7427ee7, type: 3}
+  roomBossPrefab: {fileID: 586926643651877999, guid: e0cd58b5771752407834ca6e54f542ea, type: 3}
   roomOffsetX: 40
   roomOffsetY: 40
   passPrefab: {fileID: 8197101766819024181, guid: 763bc3116ee4a3d4ba8f54e70469f529, type: 3}

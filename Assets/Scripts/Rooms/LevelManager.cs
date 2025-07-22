@@ -120,10 +120,10 @@ public class LevelManager : MonoBehaviour
                             if (cluster.Contains(rii2) || rii2 == null) continue;
                             bool add = false;
                             print($"{x2} {y2} {rii2.roomInfo.rd}");
-                            if (rii2.roomInfo.rd.up == DirAvailability.Available && cluster.Contains(rooms[x, y - 1])) add = true;
-                            if (rii2.roomInfo.rd.down == DirAvailability.Available && cluster.Contains(rooms[x, y + 1])) add = true;
-                            if (rii2.roomInfo.rd.left == DirAvailability.Available && cluster.Contains(rooms[x - 1, y])) add = true;
-                            if (rii2.roomInfo.rd.right == DirAvailability.Available && cluster.Contains(rooms[x + 1, y])) add = true;
+                            if (rii2.roomInfo.rd.up == DirAvailability.Available && cluster.Contains(rooms[x2, y2 - 1])) add = true;
+                            if (rii2.roomInfo.rd.down == DirAvailability.Available && cluster.Contains(rooms[x2, y2 + 1])) add = true;
+                            if (rii2.roomInfo.rd.left == DirAvailability.Available && cluster.Contains(rooms[x2 - 1, y2])) add = true;
+                            if (rii2.roomInfo.rd.right == DirAvailability.Available && cluster.Contains(rooms[x2 + 1, y2])) add = true;
                             if (add) {
                                 updated = true;
                                 cluster.Add(rii2);

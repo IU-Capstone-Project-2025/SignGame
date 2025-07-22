@@ -1,0 +1,83 @@
+diff --git a/Assets/Prefabs/enemies/Objects/pumpkin.prefab b/Assets/Prefabs/enemies/Objects/pumpkin.prefab
+index 074203b..d4bb471 100644
+--- a/Assets/Prefabs/enemies/Objects/pumpkin.prefab
++++ b/Assets/Prefabs/enemies/Objects/pumpkin.prefab
+@@ -279,7 +279,7 @@ CapsuleCollider2D:
+   m_PrefabInstance: {fileID: 0}
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 4683463488484545184}
+-  m_Enabled: 0
++  m_Enabled: 1
+   serializedVersion: 3
+   m_Density: 1
+   m_Material: {fileID: 0}
+@@ -302,7 +302,7 @@ CapsuleCollider2D:
+   m_CallbackLayers:
+     serializedVersion: 2
+     m_Bits: 4294967295
+-  m_IsTrigger: 0
++  m_IsTrigger: 1
+   m_UsedByEffector: 0
+   m_CompositeOperation: 0
+   m_CompositeOrder: 0
+diff --git a/Assets/Scenes/LevelTest.unity b/Assets/Scenes/LevelTest.unity
+index f97335f..5315c6e 100644
+--- a/Assets/Scenes/LevelTest.unity
++++ b/Assets/Scenes/LevelTest.unity
+@@ -153,7 +153,7 @@ MonoBehaviour:
+   roomOffsetX: 22.81
+   roomOffsetY: 14.21
+   usePath: 1
+-  removeUselessClusters: 0
++  removeUselessClusters: 1
+   startRooms:
+   - {fileID: 11400000, guid: 598d71b533d25064e81c6dfddf612383, type: 2}
+   - {fileID: 11400000, guid: add3367bfe6f9e24c9ba710cfb3ec5e5, type: 2}
+@@ -2616,6 +2616,7 @@ MonoBehaviour:
+   m_EditorClassIdentifier: 
+   mapRoot: {fileID: 718551940}
+   roomPrefab: {fileID: 9199501817593724642, guid: 4e6b8c57aa5413b4e8bf155ff7427ee7, type: 3}
++  roomBossPrefab: {fileID: 9199501817593724642, guid: 8528152cffbf76dceb57d7023bb2e617, type: 3}
+   roomOffsetX: 40
+   roomOffsetY: 40
+   passPrefab: {fileID: 8197101766819024181, guid: 763bc3116ee4a3d4ba8f54e70469f529, type: 3}
+diff --git a/Assets/Scripts/ForGUI/LevelMapManager.cs b/Assets/Scripts/ForGUI/LevelMapManager.cs
+index 5f55f5a..171b051 100644
+--- a/Assets/Scripts/ForGUI/LevelMapManager.cs
++++ b/Assets/Scripts/ForGUI/LevelMapManager.cs
+@@ -4,6 +4,7 @@ public class LevelMapManager : MonoBehaviour
+ {
+     public Transform mapRoot;
+     public GameObject roomPrefab;
++    public GameObject roomBossPrefab;
+     public float roomOffsetX, roomOffsetY;
+     public GameObject passPrefab;
+ 
+@@ -25,7 +26,7 @@ public class LevelMapManager : MonoBehaviour
+         for (int x = 0; x < lm.roomsX; ++x) {
+             for (int y = 0; y < lm.roomsY; ++y) {
+                 if (lm.GetRoom(x, y) == null) continue;
+-                roomsMap[x, y] = Instantiate(roomPrefab, mapRoot, false);
++                roomsMap[x, y] = Instantiate(x == lm.roomsX - 1 && y == lm.roomsY - 1 ? roomBossPrefab : roomPrefab, mapRoot, false);
+                 roomsMap[x, y].name = $"{roomPrefab.name} {x} {y}";
+                 roomsMap[x, y].transform.localPosition = new(x * roomOffsetX, -y * roomOffsetY, 0);
+                 if (x != lm.roomsX - 1) {
+diff --git a/Assets/Scripts/Rooms/LevelManager.cs b/Assets/Scripts/Rooms/LevelManager.cs
+index 30460c9..9f654c7 100644
+--- a/Assets/Scripts/Rooms/LevelManager.cs
++++ b/Assets/Scripts/Rooms/LevelManager.cs
+@@ -120,10 +120,10 @@ public class LevelManager : MonoBehaviour
+                             if (cluster.Contains(rii2) || rii2 == null) continue;
+                             bool add = false;
+                             print($"{x2} {y2} {rii2.roomInfo.rd}");
+-                            if (rii2.roomInfo.rd.up == DirAvailability.Available && cluster.Contains(rooms[x, y - 1])) add = true;
+-                            if (rii2.roomInfo.rd.down == DirAvailability.Available && cluster.Contains(rooms[x, y + 1])) add = true;
+-                            if (rii2.roomInfo.rd.left == DirAvailability.Available && cluster.Contains(rooms[x - 1, y])) add = true;
+-                            if (rii2.roomInfo.rd.right == DirAvailability.Available && cluster.Contains(rooms[x + 1, y])) add = true;
++                            if (rii2.roomInfo.rd.up == DirAvailability.Available && cluster.Contains(rooms[x2, y2 - 1])) add = true;
++                            if (rii2.roomInfo.rd.down == DirAvailability.Available && cluster.Contains(rooms[x2, y2 + 1])) add = true;
++                            if (rii2.roomInfo.rd.left == DirAvailability.Available && cluster.Contains(rooms[x2 - 1, y2])) add = true;
++                            if (rii2.roomInfo.rd.right == DirAvailability.Available && cluster.Contains(rooms[x2 + 1, y2])) add = true;
+                             if (add) {
+                                 updated = true;
+                                 cluster.Add(rii2);
