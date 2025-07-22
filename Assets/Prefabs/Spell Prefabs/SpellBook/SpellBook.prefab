@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 8957086908792981365}
   - component: {fileID: 4686047294200404694}
   m_Layer: 5
-  m_Name: SpellBook 1
+  m_Name: SpellBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

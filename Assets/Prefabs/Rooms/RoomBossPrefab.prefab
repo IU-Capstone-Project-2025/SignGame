@@ -2916,9 +2916,10 @@ GameObject:
   - component: {fileID: 6302585419762750204}
   - component: {fileID: 4221041634303372456}
   - component: {fileID: 1712350958716646473}
+  - component: {fileID: 4672033668975491138}
   m_Layer: 2
   m_Name: Phase1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2953,6 +2954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  coinReward: 3
+  deathEffectDuration: 0.5
+  explosionControllerPrefab: {fileID: 7307266941435632913, guid: b2b3ac9126bb55e41ba1ccd30b288a29, type: 3}
+  blowEffect: {fileID: 1851702391873127063, guid: 6e5ab4ca5b3ef694f8e8b02f697eec3c, type: 3}
   hp: 0
   spawn: {fileID: 0}
   flashDuration: 0.06
@@ -3016,6 +3021,35 @@ PolygonCollider2D:
       - {x: 0.47506762, y: 2.1034322}
       - {x: 0.5014413, y: 2.5882068}
   m_UseDelaunayMesh: 0
+--- !u!114 &4672033668975491138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3898596534976997590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158e1a5ab6f44734cbd36f45e0261bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodParticles: {fileID: 0}
+  sparkParticles: {fileID: 0}
+  weakForce:
+    minSpeed: 5
+    maxSpeed: 15
+    lifetime: 0.5
+  mediumForce:
+    minSpeed: 10
+    maxSpeed: 25
+    lifetime: 1
+  strongForce:
+    minSpeed: 15
+    maxSpeed: 35
+    lifetime: 1.5
+  weakEmissionCount: 10
+  mediumEmissionCount: 20
+  strongEmissionCount: 35
 --- !u!1 &3958867722123781562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,7 +3479,7 @@ GameObject:
   - component: {fileID: 7988852924286957654}
   m_Layer: 0
   m_Name: BossObject
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3500,6 +3534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  coinReward: 3
+  deathEffectDuration: 0.5
+  explosionControllerPrefab: {fileID: 0}
+  blowEffect: {fileID: 0}
   hp: 0
   spawn: {fileID: 0}
   flashDuration: 0.06
@@ -4391,9 +4429,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6816244674259067569}
+  - component: {fileID: 7564759300155713148}
   m_Layer: 2
   m_Name: Phase2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4413,6 +4452,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2246073824241134813}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7564759300155713148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242338225751569238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158e1a5ab6f44734cbd36f45e0261bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodParticles: {fileID: 0}
+  sparkParticles: {fileID: 0}
+  weakForce:
+    minSpeed: 5
+    maxSpeed: 15
+    lifetime: 0.5
+  mediumForce:
+    minSpeed: 10
+    maxSpeed: 25
+    lifetime: 1
+  strongForce:
+    minSpeed: 15
+    maxSpeed: 35
+    lifetime: 1.5
+  weakEmissionCount: 10
+  mediumEmissionCount: 20
+  strongEmissionCount: 35
 --- !u!1 &6449210541455546432
 GameObject:
   m_ObjectHideFlags: 0
